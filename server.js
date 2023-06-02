@@ -1,0 +1,246 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const port = process.env.port || 5000;
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}))
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.get('/api/comments', (req, res) => {
+  res.send([
+  {
+  "comments": [
+
+
+    {
+      "id": "436394102",
+      "uuid": null,
+      "file_key": "1Ab8c4kw1mbN8M0JCEVKXQ",
+      "parent_id": "436341342",
+      "user": {
+        "handle": "Jk",
+        "img_url": "https://s3-alpha.figma.com/profile/9014144a-ae18-42b3-b195-130ccb00f35b",
+        "id": "1037013305021944583"
+      },
+      "created_at": "2023-05-04T22:28:54.505Z",
+      "resolved_at": null,
+      "message": "ㅎㅎ",
+      "reactions": [
+        {
+          "emoji": ":heart_eyes:",
+          "created_at": "2023-05-04T23:42:04.553Z",
+          "user": {
+            "id": "1037013305021944583",
+            "handle": "Jk",
+            "img_url": "https://s3-alpha.figma.com/profile/9014144a-ae18-42b3-b195-130ccb00f35b"
+          }
+        }
+      ],
+      "client_meta": null,
+      "order_id": null
+    },
+
+
+    {
+      "id": "436393999",
+      "uuid": null,
+      "file_key": "1Ab8c4kw1mbN8M0JCEVKXQ",
+      "parent_id": "436341342",
+      "user": {
+        "handle": "Jk",
+        "img_url": "https://s3-alpha.figma.com/profile/9014144a-ae18-42b3-b195-130ccb00f35b",
+        "id": "1037013305021944583"
+      },
+      "created_at": "2023-05-04T22:28:40.304Z",
+      "resolved_at": null,
+      "message": "뭐가요?",
+      "reactions": [
+        {
+          "emoji": ":fire:",
+          "created_at": "2023-05-04T23:42:01.389Z",
+          "user": {
+            "id": "1037013305021944583",
+            "handle": "Jk",
+            "img_url": "https://s3-alpha.figma.com/profile/9014144a-ae18-42b3-b195-130ccb00f35b"
+          }
+        }
+      ],
+      "client_meta": null,
+      "order_id": null
+    },
+
+
+    {
+      "id": "436341800",
+      "uuid": null,
+      "file_key": "1Ab8c4kw1mbN8M0JCEVKXQ",
+      "parent_id": "436341342",
+      "user": {
+        "handle": "Mijin Kim",
+        "img_url": "https://www.gravatar.com/avatar/f819f0e7301f1af56009e4878c638e38?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_m_v2.png",
+        "id": "1098608169374343509"
+      },
+      "created_at": "2023-05-04T20:56:22.125Z",
+      "resolved_at": null,
+      "message": "ㅇ:sleepy:",
+      "reactions": [
+        {
+          "emoji": ":+1:",
+          "created_at": "2023-05-04T22:28:01.229Z",
+          "user": {
+            "id": "1037013305021944583",
+            "handle": "Jk",
+            "img_url": "https://s3-alpha.figma.com/profile/9014144a-ae18-42b3-b195-130ccb00f35b"
+          }
+        }
+      ],
+      "client_meta": null,
+      "order_id": null
+    },
+
+
+    {
+      "id": "436341702",
+      "uuid": null,
+      "file_key": "1Ab8c4kw1mbN8M0JCEVKXQ",
+      "parent_id": "436341342",
+      "user": {
+        "handle": "Mijin Kim",
+        "img_url": "https://www.gravatar.com/avatar/f819f0e7301f1af56009e4878c638e38?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_m_v2.png",
+        "id": "1098608169374343509"
+      },
+      "created_at": "2023-05-04T20:56:14.043Z",
+      "resolved_at": null,
+      "message": "글쎄요",
+      "reactions": [],
+      "client_meta": null,
+      "order_id": null
+    },
+
+
+    {
+      "id": "436341659",
+      "uuid": null,
+      "file_key": "1Ab8c4kw1mbN8M0JCEVKXQ",
+      "parent_id": "436341342",
+      "user": {
+        "handle": "Mijin Kim",
+        "img_url": "https://www.gravatar.com/avatar/f819f0e7301f1af56009e4878c638e38?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_m_v2.png",
+        "id": "1098608169374343509"
+      },
+      "created_at": "2023-05-04T20:56:10.017Z",
+      "resolved_at": null,
+      "message": "아니요",
+      "reactions": [],
+      "client_meta": null,
+      "order_id": null
+    },
+
+
+    {
+      "id": "436341342",
+      "uuid": "b82d5546-ad14-4f97-8e84-a3f9ef2d3c1f",
+      "file_key": "1Ab8c4kw1mbN8M0JCEVKXQ",
+      "parent_id": "",
+      "user": {
+        "handle": "Mijin Kim",
+        "img_url": "https://www.gravatar.com/avatar/f819f0e7301f1af56009e4878c638e38?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_m_v2.png",
+        "id": "1098608169374343509"
+      },
+      "created_at": "2023-05-04T20:55:46.845Z",
+      "resolved_at": null,
+      "message": "test comment @Jk @Peter HM Yang",
+      "reactions": [],
+      "client_meta": {
+        "node_id": "8:2563",
+        "node_offset": {
+          "x": 1049,
+          "y": 336
+        }
+      },
+      "order_id": "3"
+    },
+
+
+    {
+      "id": "431139540",
+      "uuid": "3b591143-14ed-46b0-b9c9-b21b14d9183a",
+      "file_key": "1Ab8c4kw1mbN8M0JCEVKXQ",
+      "parent_id": "",
+      "user": {
+        "handle": "Peter HM Yang",
+        "img_url": "https://www.gravatar.com/avatar/e6ef8c02f142214e395cca8c12a652d2?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_p_v2.png",
+        "id": "1018253447777462068"
+      },
+      "created_at": "2023-04-28T00:48:28.856Z",
+      "resolved_at": null,
+      "message": "archive",
+      "reactions": [],
+      "client_meta": {
+        "node_id": "21:33639",
+        "node_offset": {
+          "x": 1245,
+          "y": 104
+        }
+      },
+      "order_id": "2"
+    },
+
+
+    {
+      "id": "428571034",
+      "uuid": null,
+      "file_key": "1Ab8c4kw1mbN8M0JCEVKXQ",
+      "parent_id": "428570893",
+      "user": {
+        "handle": "Jk",
+        "img_url": "https://s3-alpha.figma.com/profile/9014144a-ae18-42b3-b195-130ccb00f35b",
+        "id": "1037013305021944583"
+      },
+      "created_at": "2023-04-25T20:59:00.970Z",
+      "resolved_at": null,
+      "message": "navgation components",
+      "reactions": [],
+      "client_meta": null,
+      "order_id": null
+    },
+
+
+    {
+      "id": "428570893",
+      "uuid": "70570ba4-9898-461b-972b-cb945cc597cc",
+      "file_key": "1Ab8c4kw1mbN8M0JCEVKXQ",
+      "parent_id": "",
+      "user": {
+        "handle": "Jk",
+        "img_url": "https://s3-alpha.figma.com/profile/9014144a-ae18-42b3-b195-130ccb00f35b",
+        "id": "1037013305021944583"
+      },
+      "created_at": "2023-04-25T20:58:50.567Z",
+      "resolved_at": "2023-04-25T22:41:43.340Z",
+      "message": "@re",
+      "reactions": [],
+      "client_meta": {
+        "node_id": "22:36099",
+        "node_offset": {
+          "x": 3924,
+          "y": 2441
+        }
+      },
+      "order_id": "1"
+    }
+
+
+  ]
+}
+
+  ])
+})
+
+app.listen(port, () => {
+  console.log(`Commentify Server listening on port ${port}`)
+})
